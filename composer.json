@@ -1,7 +1,7 @@
 {
-	"name"	: "euroglas/recursoshumanos",
+	"name"	: "euroglas/indicadores",
 	"type"	: "library",
-	"description"	: "Modulo de Recursos Humanos, para EUROGLAS",
+	"description"	: "Modulo de Indicadores, para EUROGLAS",
 	"keywords"	: ["recursoshumanos","rh","rest","euroglas"],
 	"homepage":	"http://euroglas.net",
 	"license":	"agpl-3.0",
