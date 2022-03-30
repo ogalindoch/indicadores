@@ -127,7 +127,7 @@ class indicadores implements \euroglas\eurorest\restModuleInterface
     }
     public function getIndicadorValue( $idIndicador )
     {
-        $query = "SELECT * FROM IndicadorValor WHERE idIndicador=$idIndicador";
+        $query = "SELECT IndicadorValor.*, IndicadorConfig.Nombre, IndicadorConfig.Descripcion FROM IndicadorValor LEFT JOIN IndicadorConfig ON (IndicadorValor.idIndicador = IndicadorConfig.idIndicador) WHERE IndicadorValor.idIndicador=$idIndicador";
 
         $dbRH = $this->connect_db("IndicadoresDB");
 
